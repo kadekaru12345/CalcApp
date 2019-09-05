@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             var text2 = editText2.text.toString()
             var num2 = text.toDouble()
 
-
+         setOnClickListener{ v ->
             var TextView = 0
             if (v.id == R.id.button1) {
                 var TextView = num1 + num2
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             } else if (v.id == R.id.button4) {
                 var TextView = num1 / num2
             }
-        }
+        }}
     }}}}
 
     override fun onClick(v:View?){
