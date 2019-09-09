@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setOnClickListener{ v ->
+
         button1.setOnClickListener(this)
         button2.setOnClickListener(this)
         button3.setOnClickListener(this)
@@ -23,51 +25,44 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
 
-        button1.setOnClickListener() {
-            var text = editText1.text.toString()
-            var num1 = text.toDouble()
-            var text2 = editText2.text.toString()
-            var num2 = text.toDouble()
+    override fun onClick(v:View?){
 
-        button2.setOnClickListener() {
-            var text = editText1.text.toString()
-            var num1 = text.toDouble()
-            var text2 = editText2.text.toString()
-            var num2 = text.toDouble()
 
-        button3.setOnClickListener() {
-            var text = editText1.text.toString()
-            var num1 = text.toDouble()
-            var text2 = editText2.text.toString()
-            var num2 = text.toDouble()
-
-        button4.setOnClickListener() {
-            var text = editText1.text.toString()
-            var num1 = text.toDouble()
-            var text2 = editText2.text.toString()
-            var num2 = text.toDouble()
-
-         setOnClickListener{ v ->
             var TextView = 0
             if (v.id == R.id.button1) {
+                var text = editText1.text.toString()
+                var num1 = text.toDouble()
+                var text2 = editText2.text.toString()
+                var num2 = text.toDouble()
                 var TextView = num1 + num2
             } else if (v.id == R.id.button2) {
+                var text = editText1.text.toString()
+                var num1 = text.toDouble()
+                var text2 = editText2.text.toString()
+                var num2 = text.toDouble()
                 var TextView = num1 - num2
             } else if (v.id == R.id.button3) {
+                var text = editText1.text.toString()
+                var num1 = text.toDouble()
+                var text2 = editText2.text.toString()
+                var num2 = text.toDouble()
                 var TextView = num1 * num2
-            } else if (v.id == R.id.button4) {
+            } else if (v.id == R.id.button4) {var text = editText1.text.toString()
+                var num1 = text.toDouble()
+                var text2 = editText2.text.toString()
+                var num2 = text.toDouble()
                 var TextView = num1 / num2
             }
-        }}
-    }}}}
 
-    override fun onClick(v:View?){
         val intent = Intent(this,SecondActivity::class.java)
+
         startActivity(intent)
+                }}}}
 
 
-    }
 
 
 
-}
+
+
+
